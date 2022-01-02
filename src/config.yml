@@ -1,0 +1,58 @@
+options:
+  version: '1'
+  cooldown: 5
+  sounds:
+    reproduce: true
+    perm: ENTITY_ITEM_BREAK
+    reload: UI_BUTTON_CLICK
+    cooldown: BLOCK_NOTE_BLOCK_PLING
+    volume: 1.0
+    pitch: 1.0
+  location:
+    build: false
+    damage: false
+    hunger: false
+    void: false
+    weather: false
+    pvp: false
+    pickup_items: false
+    drop_items: false
+    lobby:
+      world: ''
+      x:
+      y:
+      z:
+      yaw:
+      pitch:
+  messages:
+    prefix: "&6LobbySystem &8> "
+    not_perm: "&cYou must have the permission &7(&e<permission>&7) &cto this."
+    not_console: "&cThis command can't be executed into console."
+    not_command: "&cThis command doesn't exists."
+    cmds: |-
+      &l
+      &6          LobbySystem v&e10.1
+      &l
+      &8 - &a/lobbysystem [/ls] &fMain Command.
+      &8 - &a/ls list &fShow all the commands of plugin.
+      &8 - &a/ls reload &fReload the plugin.
+      &l
+      &8 - &a/lobby &fLobby Manager Command.
+      &l
+    reload: "&7The plugin was &areloaded &7correctly in &6<time>ms&7."
+    cooldown_time: "&cYou must wait &e<time>s &cto use this command again."
+    lobby:
+      setup: "&7The lobby was saved &acorrectly&7."
+      usage: |-
+        &l
+        &8 - &a/lobby remove &fRemove the lobby location.
+        &8 - &a/lobby set &fSet the lobby point and save the location.
+        &l
+      removed: "&cThe lobby point was removed correctly."
+      not_exists: "&cThe lobby point doesn't exists."
+      not_build: "&cYou can't place blocks here."
+      not_break: "&cYou can't break blocks here."
+      not_pvp: "&cThe PVP was deactivated."
+      not_pickup: "&cYou can't pickup items here."
+      not_drop: "&cYou can't drop items here."
+      error: "&cAn occurred a error while be saving the lobby."

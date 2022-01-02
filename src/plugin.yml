@@ -1,0 +1,29 @@
+name: LobbySystem
+main: org.alqj.coder.lobbysystem.LobbySystem
+version: 10.1
+api-version: 1.17
+author: iAlqjDV
+website: https://www.spigotmc.org/members/ialqjdv.1471925/
+permissions:
+  lobbysystem.admin:
+    children:
+      lobbysystem.cmd.*:
+        children:
+          - lobbysystem.cmd.list
+          - lobbysystem.cmd.reload
+          - lobbysystem.cmd.lobby
+      lobbysystem.bypass.*:
+        children:
+          - lobbysystem.bypass.build
+          - lobbysystem.bypass.void
+          - lobbysystem.bypass.pickup
+          - lobbysystem.bypass.drop
+          - lobbysystem.bypass.pvp
+          - lobbysystem.bypass.damage
+commands:
+  lobbysystem:
+    aliases: [ls]
+    description: Main Command.
+  lobby:
+    aliases: [lb]
+    description: Lobby Manager Command.
